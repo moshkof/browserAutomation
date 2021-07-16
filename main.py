@@ -11,5 +11,6 @@ browser.get(url)
 
 # assert "Population by Country" in browser.title
 
-elem_a = browser.find_elements_by_tag_name("input")
+elem_a = browser.find_element_by_css_selector('input[type="search"]')
 print(elem_a)
+elem_a.send_keys("Russia\n")
